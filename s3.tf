@@ -23,5 +23,11 @@ status = "Enabled"
 }
 }
 
-
+terraform {
+backend "s3" {
+region = "ap-south-1"
+bucket = "suryatfproj01.monolithic01.moonobucket01"
+key = "prod/terraform.tfstate"
+}
+}
 
